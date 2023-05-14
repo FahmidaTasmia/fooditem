@@ -1,0 +1,27 @@
+.cycle{
+position: absolute;
+bottom: -400px;
+left: -400px;
+animation-name: drive;
+animation-duration: 3s;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+}
+
+@keyframes drive {
+    from{transform: translateX(200px);}
+    to{transform: translateX(500px);}
+}
+
+@media (max-width: 576px) {
+    .cycle{
+        position: absolute;
+        bottom: -200px;
+        left: -200px;
+        
+        }  
+        @keyframes drive {
+            from{transform: translateX(100px);}
+            to{transform: translateX(200px);}
+        }
+}
